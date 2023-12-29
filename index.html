@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamil Jamile - Portafolio</title>
+    <style>
+        #flame-text,
+        #flame-description,
+        #portfolio-title {
+            text-align: center;
+        }
+
+        #flame-text,
+        #flame-description {
+            font-size: 20px;
+            position: relative;
+            animation: flame 1s infinite alternate;
+            text-align: right;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        #portfolio-title {
+            font-size: 24px;
+            /* Tamaño del título "Portafolio" */
+            background-color: #000;
+            color: #fff;
+            padding: 8px;
+            border-radius: 8px;
+            display: inline-block;
+            animation: pulse 1s infinite alternate;
+        }
+
+        @keyframes flame {
+            from {
+                color: #ff6600;
+                text-shadow: 0 0 5px #ff6600, 0 0 10px #ff6600, 0 0 20px #ff6600;
+            }
+
+            to {
+                color: #ff0000;
+                text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            animation: changeColorBackground 10s infinite alternate;
+            transition: transform 0.3s ease;
+        }
+
+        @keyframes changeColorBackground {
+            from {
+                background-color: #1a1a1a;
+            }
+
+            to {
+                background-color: #4d4d4d;
+            }
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0.em;
+        }
+
+        h1,
+        h2 {
+            color: #fff;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(253, 16, 16, 0.1);
+            color: #333;
+            position: relative;
+            transition: transform 0.3s ease; 
+        }
+
+        section h2 {
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 0 10px;
+            font-size: 24px;
+            border-radius: 5px;
+            margin: 0;
+        }
+
+        a:visited {
+            color: #3498db;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            clear: both;
+            margin-top: 20px;
+        }
+
+        footer a {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="Yo.jpg" alt="Foto de perfil de Jamil Jamile" style="border-radius: 50%; width: 200px; height: 200px;">
+        <h1>
+            <span id="flame-text">Jamil Jamile</span> <span id="portfolio-title">Portafolio</span>
+        </h1>
+        <p id="flame-description">Desarrollador Web & Traductor Ingles Espanol- Arabe Espanol</p>
+    </header>
+
+    <section>
+        <h2>Sobre Mí</h2>
+        <p>
+            Hello there👋, My name is Jamil Jamile and I am a Full Stack Web Developer from Bekaa, Lebanon. I am passionate about constantly learning new technologies and techniques to develop better and more interactive user interfaces. ❤️ I enjoy participating in IT communities, open-source projects and helping whoever needs a hand. The technologies I work with: HTML, CSS, JavaScript, Python, CSS, and SQL databases. Also, I can Translate English to Spanish or Spanish to Arabic. I also worked as a freelancer creating Subtitles for videos.
+        </p>
+        <!-- Barra de Descarga para el CV -->
+        <div style="background-color: #000; padding: 20px; border-radius: 10px; text-align: center;">
+            <p style="color: #fff; font-size: 16px; margin-bottom: 20px;">
+                ¡Descarga mi CV para saber más sobre mi experiencia y habilidades!
+            </p>
+            <!-- Enlace a tu CV -->
+            <a href="https://github.com/JJN1999-19/Mi-CV" style="background-color: #fff; color: #000; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 14px; margin-top: 10px;">Descargar CV</a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Proyectos Destacados</h2>
+        <p>
+            Agregué subtítulos a un video. ¡Echa un vistazo en mi <a href="https://drive.google.com/file/d/1GGBWIMSClhs_-c-DA-HDVurhcJQ_eKeZ/view?usp=drive_link" target="_blank" rel="noopener noreferrer">video con subtítulos</a>!
+        </p>
+    </section>
+
+    <section>
+        <h2>Contacto</h2>
+        <p>
+            Puedes contactarme a través de mi correo electrónico: <a href="mailto:jamiljamile52@yahoo.com">jamiljamile52@yahoo.com</a>.
+        </p>
+        <p>Mobile Number: <a href="https://wa.me/+96181874965" target="_blank" rel="noopener noreferrer">Envíame un mensaje de WhatsApp</a>.
+        </p>
+    </section>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/tu_perfil_linkedin/" target="_blank" rel="noopener noreferrer">
+            <img class="social-icon" src="icons8-linkedin-48.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/tu_usuario_instagram/" target="_blank" rel="noopener noreferrer">
+            <img class="social-icon" src="icons8-instagram-48.png" alt="Instagram">
+        </a>
+    </footer>
+
+</body>
+
+</html>
+
+
+       
+
